@@ -4,9 +4,9 @@ class StaticPagesController < ApplicationController
 
     def download
         send_file(
-            "#{Rails.root}/public/answers.pdf",
-            filename: "answers.pdf",
-            type: "application/pdf"
+            "#{Rails.root}/public/DonateForward.crx",
+            filename: "DonateForward.crx",
+            type: "application/x-chrome-extension"
             )
     end
 end
